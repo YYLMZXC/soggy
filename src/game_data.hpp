@@ -84,6 +84,34 @@ struct GadgetData {
 	EntityType entity_type; //类型
 };
 
+struct GadgetData_Level {
+	int id = 0; //ID
+	int default_camp = 0; //默认阵营
+	bool is_interactive = false; //能否交互
+};
+
+struct GadgetData_Monster {
+	int id = 0; //ID
+	int default_camp = 0; //默认阵营
+	bool is_interactive = false; //能否交互
+};
+
+struct GadgetData_Avatar {
+	int id = 0; //ID
+	int default_camp = 0; //默认阵营
+	bool is_interactive = false; //能否交互
+};
+
+struct GadgetData_Equip {
+	int id = 0; //ID
+	int default_camp = 0; //默认阵营
+	bool is_interactive = false; //能否交互
+};
+
+struct GadgetPropData {
+	int id = 0; //ID
+};
+
 struct MonsterData {
 	int id; //ID
 	int equip_1; //装备1
@@ -113,6 +141,11 @@ extern std::unordered_map<int, ShopPlanData> shop_plan_datas;
 extern std::unordered_map<int, ShopGoodsData> shop_goods_datas;
 extern std::unordered_map<int, TalentSkillData> talent_skill_datas;
 extern std::unordered_map<int, GadgetData> gadget_datas;
+extern std::unordered_map<int, GadgetData_Level> gadget_level_datas;
+extern std::unordered_map<int, GadgetData_Monster> gadget_monster_datas;
+extern std::unordered_map<int, GadgetData_Avatar> gadget_avatar_datas;
+extern std::unordered_map<int, GadgetData_Equip> gadget_equip_datas;
+extern std::unordered_map<int, GadgetPropData> gadget_prop_datas;
 extern std::unordered_map<int, MonsterData> monster_datas;
 extern std::unordered_map<int, NpcData> npc_datas;
 extern std::unordered_map<int, SceneData> scene_datas;
